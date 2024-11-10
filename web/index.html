@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Scraping Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .easy, .medium, .hard, .professional { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+        .easy { background-color: #e1f5fe; }
+        .medium { background-color: #ffecb3; }
+        .hard { background-color: #ffccbc; }
+        .professional { background-color: #d1c4e9; }
+    </style>
+</head>
+<body>
+
+    <h1>Web Scraping Practice Page</h1>
+    
+    <!-- Easy Level: Simple Text -->
+    <div class="easy">
+        <h2>Easy: Simple Text</h2>
+        <p id="easy-text">This is a simple paragraph for easy scraping.</p>
+    </div>
+
+    <!-- Medium Level: List of Items -->
+    <div class="medium">
+        <h2>Medium: List of Items</h2>
+        <ul id="medium-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <!-- Hard Level: Product Table -->
+    <div class="hard">
+        <h2>Hard: Product Table</h2>
+        <table id="hard-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product A</td>
+                    <td>$10.00</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Product B</td>
+                    <td>$15.50</td>
+                    <td>Out of Stock</td>
+                </tr>
+                <tr>
+                    <td>Product C</td>
+                    <td>$7.99</td>
+                    <td>In Stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Professional Level: Nested Content with Attributes -->
+    <div class="professional">
+        <h2>Professional: Nested Content with Attributes</h2>
+        <div class="products">
+            <div class="product" data-id="101">
+                <h3>Product D</h3>
+                <span class="price">$25.00</span>
+                <p class="description">High-quality product D.</p>
+            </div>
+            <div class="product" data-id="102">
+                <h3>Product E</h3>
+                <span class="price">$30.00</span>
+                <p class="description">Top-selling product E.</p>
+            </div>
+            <div class="product" data-id="103">
+                <h3>Product F</h3>
+                <span class="price">$20.00</span>
+                <p class="description">Affordable product F.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
