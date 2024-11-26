@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Courses</title>
+</head>
+<body>
+    <div class="courseSec">
+        {%for course in courses%}
+        <div class="courseBox">
+            <img src="{{course.image}}" alt="">
+            <h2>{{course.name}}</h2>
+            <p>Price:{{course.price}}</p>
+            <p>Id:{{course.uid}}</p>
+            <p>Time:{{course.time}}</p>
+            <a href="{{course.code}}">Enroll Now</a>
+            </div>
+            {%endfor%}
+    </div>
+    <button>Load More</button>
+</body>
+</html>
